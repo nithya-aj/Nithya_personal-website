@@ -52,11 +52,10 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="home-text">
-                    <h4>Hi there! I'm</h4>
+                    <h4>Hi there!I'm</h4>
                     <h1>Nithya A J</h1>
-                    <span>Full stack developer | MERN </span>
-                    <p>I design and code beautifully simple things, and I love what I do.I'm quietly confident,
-                        naturally curious,
+                    <span>Full Stack Developer</span>
+                    <p>I design and code beautifully simple things, and I love what I do.I'm quietly confident, naturally curious, 
                         and perpetually working on improving my chops one design problem at a time.</p>
                     <blockquote class="blockquote">
                         <p style="color:#00a78e">"Be like a postage stamp; stick to one thing until you get there"
@@ -68,7 +67,7 @@
                 </div>
                 <div class="home-image">
                     <div class="img-box">
-                        <img src="images/Myphoto.jpg" class="photo" alt="">
+                        <img src="/images/photo.jpg" class="photo" alt="">
                     </div>
                 </div>
             </div>
@@ -136,51 +135,49 @@
                                 Cochin, Ernakulam</span></p>
                     </div>
                 </div>
-                <!--path between 1-2-->
-                <div class="row timeline">
-                    <div class="col-2">
-                        <div class="corner top-right"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr />
-                    </div>
-                    <div class="col-2">
-                        <div class="corner left-bottom"></div>
-                    </div>
+              </div>
+              <!--path between 1-2-->
+              <div class="row timeline">
+                <div class="col-2">
+                  <div class="corner top-right"></div>
                 </div>
-                <!--second section-->
-                <div class="row align-items-center justify-content-end how-it-works d-flex">
-                    <div class="col-6 text-right">
-                        <h5>2020-2022</h5>
-                        <p>Bvoc Software Development <span style="color: cadetblue;">St.Mary's College, Thrissur</span>
-                        </p>
-                    </div>
-                    <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">2</div>
-                    </div>
+                <div class="col-8">
+                  <hr/>
                 </div>
-                <!--path between 2-3-->
-                <div class="row timeline">
-                    <div class="col-2">
-                        <div class="corner right-bottom"></div>
-                    </div>
-                    <div class="col-8">
-                        <hr />
-                    </div>
-                    <div class="col-2">
-                        <div class="corner top-left"></div>
-                    </div>
+                <div class="col-2">
+                  <div class="corner left-bottom"></div>
                 </div>
-                <!--third section-->
-                <div class="row align-items-center how-it-works d-flex">
-                    <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-                        <div class="circle font-weight-bold">3</div>
-                    </div>
-                    <div class="col-6">
-                        <h5>2018 & 2018-2020</h5>
-                        <p>High School <span style="color: cadetblue;">CNN GHS, Cherpu, Thrissur</span></p>
-                        <p>Higher Secondary <span style="color: cadetblue;">Sacred Heart CGHSS, Thrissur</span></p>
-                    </div>
+              </div>
+              <!--second section-->
+              <div class="row align-items-center justify-content-end how-it-works d-flex">
+                <div class="col-6 text-right">
+                  <h5>2020-2022</h5>
+                  <p>Bvoc Software Development <span style="color: cadetblue;">St.Mary's College, Thrissur</span> </p>
+                </div>
+                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold">2</div>
+                </div>
+              </div>
+              <!--path between 2-3-->
+              <div class="row timeline">
+                <div class="col-2">
+                  <div class="corner right-bottom"></div>
+                </div>
+                <div class="col-8">
+                  <hr/>
+                </div>
+                <div class="col-2">
+                  <div class="corner top-left"></div>
+                </div>
+              </div>
+              <!--third section-->
+              <div class="row align-items-center how-it-works d-flex">
+                <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                  <div class="circle font-weight-bold">3</div>
+                </div>
+                <div class="col-6">
+                  <h5>Present </h5>
+                  <p>Full Stack Developer<span style="color: cadetblue;"> Brototype, Cochin, Ernakulam</span></p>
                 </div>
             </div>
         </div>
@@ -739,11 +736,11 @@
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbwFmoz7zetaYEuBXktrNM1S10i1_FDLgeZHJLF0IZb7e9xqrJDDyZjVNjGA50AJwMS5/exec",
-                data: $("#submit-form").serialize(),
-                method: "post",
-                success: function (response) {
-                    text = "Message sent successfully &#128522";
+                url:"https://script.google.com/macros/s/AKfycbwFmoz7zetaYEuBXktrNM1S10i1_FDLgeZHJLF0IZb7e9xqrJDDyZjVNjGA50AJwMS5/exec",
+                data:$("#submit-form").serialize(),
+                method:"post",
+                success:function (response){
+                    text = "Form submitted successfully";
                     error_msg.innerHTML = text;
                     window.location.reload()
                     //window.location.href="https://google.com"
